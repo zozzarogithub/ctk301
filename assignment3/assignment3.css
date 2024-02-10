@@ -1,0 +1,72 @@
+h1 {
+color: lightcoral;
+}
+h1{
+background-color: indigo;
+}
+
+h2{
+color: red;
+}
+h2{
+background-color: darkred;
+}
+
+h3{
+color:darkred;
+}
+h3{
+    background-color: red;
+}
+
+h4{
+    color:indigo;
+}
+h4{
+    background-color: lightcoral;
+}
+
+p{
+    color: indigo;
+}
+p{
+    background-color: lightgrey;
+}
+
+#copyright{
+    color: white;
+}
+#copyright{
+    background-color: grey;
+}
+
+#requirements{
+    color: lightgrey;
+}
+#requirements{
+    background-color: grey;
+}
+
+.info{
+    color: darkred;
+}
+
+.links{
+    background-color: darkgrey;
+}  
+
+  a:link {
+    color: #ff0000;
+  }
+  
+  a:visited {
+    color: #00ff00;
+  }
+  
+  a:active {
+    color: #0000ff;
+  }
+  
+  a:hover {
+    color: #ffff00;
+  }        
