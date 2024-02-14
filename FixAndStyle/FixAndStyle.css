@@ -1,0 +1,58 @@
+h1{
+    color: white;
+}
+
+#bluebackground{
+    background-color: cornflowerblue;
+}
+
+a {
+    color: green;
+  }
+  
+  a:link {
+    color: green;
+  }
+  
+  a:visited {
+    color: purple;
+  }
+  
+  a:active {
+    color: lightgreen;
+  }
+  
+  a:hover {
+    color: red;
+  }   
+  
+  
+h2{
+    color: blue;
+}
+
+.doctor{
+    color: orange;
+}
+
+#redtext{
+    color: red;
+}
+
+#father{
+    color: yellow;
+}
+#father{
+    background-color: darkgreen;
+}
+#lightgreen{
+    background-color: lightgreen;
+}
+
+.yelllowbackground{
+    background-color: yellow;
+}
+
+#daughter{
+    background-color: yellow;
+}
