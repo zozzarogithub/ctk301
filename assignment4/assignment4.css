@@ -1,0 +1,108 @@
+nav{
+    border: 10px solid #c0cb02;
+    padding: 20px 20px 20px 20px;
+    margin: 40px;
+    background-color: #fecb32;
+}
+body{
+    font: normal 16px Arial, Helvetica, sans-serif;
+    background-image: url(background1.jpg);
+    background-repeat: repeat;
+}
+
+.jpgs {
+    border: 20px solid #000000;
+    padding: 40px;
+    margin: 40px;
+    background-color: #fecb32;
+}
+
+h1{
+    border: 20px solid #143905;
+    padding: 10px;
+    margin: 40px;
+    background-color: #ffac6e;
+    color: #f95f21;
+    font-style: italic;
+    font-weight: normal;
+}
+
+
+h2{
+    border: 20px solid #143905;
+    padding: 10px;
+    margin: 40px;
+    background-color: #ffac6e;
+    color: #f95f21;
+    font-style: italic;
+    font-weight: normal;
+    text-align: center;
+}
+
+h3{
+    border: 20px solid #143905;
+    padding: 10px;
+    margin: 40px;
+    background-color: #ffac6e;
+    color: #f95f21;
+    font-style: italic;
+    font-weight: normal;
+    text-align: center;
+}
+
+h4{
+    border: 20px solid #143905;
+    padding: 10px;
+    margin: 40px;
+    background-color: #ffac6e;
+    color: #f95f21;
+    font-style: italic;
+    font-weight: normal;
+    text-align: center;
+}
+
+p{
+    border: 10px solid #c0cb02;
+    padding: 20px 20px 20px 20px;
+    margin: 40px;
+    background-color: #fecb32;
+}
+.contactinfo{
+    text-align: center;
+}
+
+
+#list{
+    border: 10px solid #c0cb02;
+    padding: 20px 20px 20px 20px;
+    margin: 40px;
+    background-color: #fecb32;
+}
+
+.links{
+    background-color: darkgrey;
+}  
+
+  a:link {
+    color: #143905;
+  }
+  
+  a:visited {
+    color: #f95f21;
+  }
+  
+  a:active {
+    color: #0000ff;
+  }
+  
+  a:hover {
+    color: #fecb32;
+  }        
+
+footer{
+    text-align: center;
+    border: 10px solid #143905;
+    padding:5px;
+    margin: 40px;
+    background-color: #c0cb02;
+}
