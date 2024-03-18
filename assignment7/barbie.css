@@ -1,0 +1,146 @@
+body{
+    background-color: #999999;
+    font: normal 16px Times, Georgia, serif;
+
+}
+#wrapper {
+    margin: 1em auto;
+    padding: 0;
+    width: 960px;
+    border-top: 2px solid #1335ae;
+    border-left: 2px solid #1335ae;
+    border-right: 2px solid #1335ae;
+    background-color: #ffffff;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+  }
+header{
+grid-column: span 12;
+background-image: linear-gradient(to bottom, #136ef6, #165fe4, #1651d2, #1543c0, #1335ae);
+}
+header a{
+  padding-left: 20px;
+  font: normal 48px Arial, Helvetica, sans-serif;
+  font-style: italic;
+  text-decoration: none;
+    color: lightblue;
+}
+header a:hover{
+color: white;
+}
+nav{
+    grid-column: span 12;
+    background-color: #1335ae;
+}
+nav ul {
+    list-style-type: circle;
+    margin:0;
+    padding: 0;
+  }
+  nav li{
+    display: inline-block;
+    padding: 0;
+    margin: 0px;
+    width: 235px;
+    color: #ffffff;
+  }
+  nav li a {
+    color: #ffffff;
+    display: block;
+    padding: 20px;
+    background-image: linear-gradient(to bottom, #136ef6, #165fe4, #1651d2, #1543c0, #1335ae);
+    text-decoration: none;
+    color: lightblue;
+  }
+  nav li a:hover {
+    background-image: linear-gradient(to top, #136ef6, #165fe4, #1651d2, #1543c0, #1335ae);
+    color: white;
+  }
+  h2{
+    font: normal 32px Arial, Helvetica, sans-serif;
+    border-bottom: 2px solid #1335ae;
+    color:#1335ae;
+  }
+  #h2{
+    font: bold 16px Times, Georgia, serif;
+    grid-column: span 3;
+    padding-right: 20px;
+    padding-left: 20px;
+    background-color: lightblue;
+  }
+  #h21 a{
+    text-decoration: none;
+    color: red;
+  }
+  #h21 a:hover {
+    color: green;
+  }
+  #h21 {
+    margin-right: 20px;
+    margin-left: 20px;
+    grid-column: span 9;
+  }
+  #h22{
+    margin-left: 20px;
+    margin-right: 20px;
+    grid-column: span 9;
+  }
+  #h23{
+    font: bold 16px Times, Georgia, serif;
+    grid-column: span 3;
+    padding-top: 40px;
+    padding-right: 20px;
+    padding-left: 20px;
+    background-color: lightblue;
+  }
+  .blank{
+    opacity: 0;
+  }
+.gallery{
+    padding: 20px;
+    margin: 10px;
+    grid-column: span 4;
+}
+
+main a{
+  text-decoration: none;
+  color: red;
+} 
+main a:hover{
+  color: green;
+} 
+.gallery a{
+  text-decoration: none;
+  color: red;
+}
+#Barbies{
+    margin-right: 20px;
+    margin-bottom: 20px;
+    float: left;
+    border: 2px solid #1335ae;
+    width: 400px;
+}
+#Oppie{
+    margin-left: 20px;
+    margin-bottom: 20px;
+    float: right;
+    border: 2px solid #1335ae;
+    width: 400px;
+}
+#Barbie{
+    width: 250px;
+}
+#Ken{
+    width: 250px;
+}
+#Allen{
+    width: 250px;
+}
+footer{
+    grid-column: span 12;
+    border-bottom: 2px solid #1335ae;
+    border-top: 2px solid #1335ae;
+    margin: 0px;
+    padding: 5px;
+    background-color: red;
+}
