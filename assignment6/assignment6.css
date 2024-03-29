@@ -1,0 +1,98 @@
+body{
+    font: bold 20px Arial, Helvetica, sans-serif;
+    background-color: #999999;
+    background-image: url(a62.png);
+    background-repeat: repeat;
+    background-position: top left;
+}
+#wrapper{
+    margin: 1em auto;
+    width: 960px;
+    border: 3px solid #000000;
+    background-color: #ffffff;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 100px auto 75px;
+}
+header{
+    grid-column: span 12;
+    padding: 10px;
+}
+h1{
+    font: normal 48px Helvetica, sans-serif;
+    color: #ffffff;
+    padding: 20px;
+    margin: 10px;
+    background-color: #000000;
+}
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    }
+nav{
+    grid-column: span 3;
+}
+nav li{
+    display: inline-block;
+    margin: 20px 10px 10px 20px;
+    width: 250px;
+    color: #ffffff;
+}
+nav li a{
+    font: normal 16px Helvetica, sans-serif;
+    text-decoration: none;
+    color: #ffffff;
+    display: block;
+    border: 1px solid #ffffff;
+    padding: 20px 15px 20px 15px;
+    background-color: #ff0000;
+}
+nav li a:hover {
+    background-color: #660000;
+  }
+.imgbox {
+    float: left;
+    padding-right: 20px;
+    border: 3px solid #000000;
+    padding: 15px;
+    margin: 15px;
+    background-color: #ffffff;
+}
+main{
+    
+    font: normal 16px Georgia, serif;
+    text-align: justify;
+    grid-column: span 9;
+    padding: 20px;
+    margin: 10px;
+    background-color: #ffffff;
+}
+#pgs{
+    font: bold 16px Georgia, serif; 
+}
+h2{
+    font: bold 32px Helvetica, sans-serif;
+    border-bottom: 3px solid #000000;
+}
+main a{
+color: #ff0000;
+text-decoration: none;
+
+}
+main a:hover{
+    color: #0000ff;
+    text-decoration: underline;
+    
+    }
+footer{
+    font: normal 16px Verdana, serif;
+    font-style: italic;
+    text-align: center;
+    color: #ffffff;
+    grid-column: span 12;
+    padding: 5px;
+    margin: ;
+    border-top: 3px solid #000000;
+    background-color: #ff0000;
+}
