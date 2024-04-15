@@ -1,0 +1,169 @@
+body {
+  background-color: #111111;
+}
+
+#wrapper {
+  margin: 24px auto;
+  width: 1200px;
+  padding: 24px;
+  background-color: #111111;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 24px;
+}
+
+#mgwrapper{
+  margin: 24px auto;
+  width: 1200px;
+  padding: 24px;
+  background-color: #111111;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 24px;
+}
+
+#mwrapper{
+  margin: 24px auto;
+  width: 1200px;
+  padding: 24px;
+  background-color: #111111;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 24px;
+}
+
+header{
+  grid-column: span 12;
+  background-color: #111111;
+  background-image: url(ring.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 300px;
+}
+
+
+h1{
+  color: #ffffff;
+  grid-column: span 12;
+  text-align: center;
+}
+
+h2{
+  grid-column: span 6;
+}
+
+#Me{
+  grid-column: span 6;
+}
+
+#skills{
+  grid-column: span 12;
+}
+
+#portrait{
+  float: right;
+}
+
+main{
+  color: #ffffff;
+  grid-column: span 12;
+  float:right;
+  }
+
+main h2 {
+  grid-column: span 12;
+
+}
+.mainpic{
+  display: inline-block;
+  width: 250px;
+}
+
+.socials {
+  grid-column: span 1;
+  left: 90%;
+  position: fixed;
+  top: 300px;
+
+}
+
+.socials ul {
+  background-color: #414141;
+  list-style-type: none;
+}
+
+.socials li{
+  width: 74px;
+  color: #B3B3B3;
+}
+
+.socials li a {  
+  color: #ffffff;
+  padding: 20px;
+  text-decoration: none;
+  color: #B3B3B3;
+}
+
+nav li a:hover {
+  background-color: #171717;
+  color: #B3B3B3;
+}
+
+nav{
+  grid-column: span 12;
+  margin: 0px auto;
+  position: sticky;
+  top: 20px;
+
+}
+
+nav ul {
+  background-color: #414141;
+  list-style-type: none;
+}
+
+nav li{
+  display: inline-block;
+  width: 232px;
+  color: #B3B3B3;
+}
+
+nav li a {  
+  color: #ffffff;
+  display: block;
+  padding: 20px;
+  text-decoration: none;
+  color: #B3B3B3;
+}
+
+nav li a:hover {
+  background-color: #171717;
+  color: #B3B3B3;
+}
+.autoscroll {
+  grid-column: span 1;
+  right: 90%;
+  position: fixed;
+  top: 300px;
+
+}
+
+.autoscroll ul {
+  background-color: #414141;
+  list-style-type: none;
+}
+
+.autoscroll li{
+  width: 74px;
+  color: #B3B3B3;
+}
+
+.autoscroll li a {  
+  color: #ffffff;
+  padding: 20px;
+  text-decoration: none;
+  color: #B3B3B3;
+}
+footer{
+
+}
