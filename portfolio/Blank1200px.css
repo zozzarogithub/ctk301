@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #111111;
 }
@@ -12,25 +16,6 @@ body {
   grid-column-gap: 24px;
 }
 
-#mgwrapper{
-  margin: 24px auto;
-  width: 1200px;
-  padding: 24px;
-  background-color: #111111;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-column-gap: 24px;
-}
-
-#mwrapper{
-  margin: 24px auto;
-  width: 1200px;
-  padding: 24px;
-  background-color: #111111;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-column-gap: 24px;
-}
 
 header{
   grid-column: span 12;
@@ -41,15 +26,52 @@ header{
   padding: 300px;
 }
 
+#section1 {
+  margin: 24px auto;
+  width: 1200px;
+  padding: 24px;
+  background-color: #111111;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 24px;
+}
+
+#section2 {
+  margin: 24px auto;
+  width: 1200px;
+  padding: 24px;
+  background-color: #111111;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 24px;
+}
+
+#section3 {
+  margin: 24px auto;
+  width: 1200px;
+  padding: 24px;
+  background-color: #111111;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 24px;
+}
 
 h1{
   color: #ffffff;
   grid-column: span 12;
   text-align: center;
+  
+  font-family: "ofelia-text", sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
 h2{
   grid-column: span 6;
+
+  font-family: "ofelia-text", sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
 #Me{
@@ -75,6 +97,7 @@ main h2 {
 
 }
 .mainpic{
+  grid-column: span 3;
   display: inline-block;
   width: 250px;
 }
@@ -149,21 +172,23 @@ nav li a:hover {
 }
 
 .autoscroll ul {
-  background-color: #414141;
   list-style-type: none;
 }
 
 .autoscroll li{
   width: 74px;
   color: #B3B3B3;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .autoscroll li a {  
   color: #ffffff;
-  padding: 20px;
+  padding: 40px;
   text-decoration: none;
-  color: #B3B3B3;
+  margin-top: 40px;
 }
+
 footer{
 
 }
