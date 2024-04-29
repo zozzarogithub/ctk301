@@ -78,8 +78,35 @@ h2{
   grid-column: span 6;
 }
 
-#skills{
+@keyframes infiniteScroll {
+  from {transform: translateX(0) }
+  to {transform: translateX(calc(0px - 50% - 25px));}
+}
+.skills {
   grid-column: span 12;
+  background-color: #414141;
+  width: 100%;
+  padding-top: 60px;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  overflow-x: hidden;
+}
+.horizontal-scrolling-skills {
+  display: flex;
+  font-size: 40px;
+  width: 2600px;
+  animation-name: infiniteScroll;
+  animation-duration: 25s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  height: 200px;
+  gap: 50px;
+}
+.horizontal-scrolling-skills-logos {
+  white-space: nowrap;
+  height: 100%;
+  width: 200px;
+  background-size: cover;
 }
 
 #portrait{
@@ -99,7 +126,8 @@ main h2 {
 .mainpic{
   grid-column: span 3;
   display: inline-block;
-  width: 250px;
+  position: relative;
+  width: 400px;
 }
 
 .socials {
@@ -142,19 +170,18 @@ nav{
 
 nav ul {
   background-color: #414141;
+  padding: 0px;
   list-style-type: none;
 }
 
 nav li{
-  display: inline-block;
-  width: 232px;
+  display: inline-flex;
   color: #B3B3B3;
 }
 
 nav li a {  
   color: #ffffff;
-  display: block;
-  padding: 20px;
+  padding: 20px 110px;
   text-decoration: none;
   color: #B3B3B3;
 }
@@ -192,3 +219,4 @@ nav li a:hover {
 footer{
 
 }
+
