@@ -3,36 +3,70 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Portfolio</title>
-	<link href="Blank1200px.css" rel="stylesheet" type="text/css">
-	<link rel="Blank1200px.css" href="https://use.typekit.net/tsx6jsj.css">
+	<link href="StartHere.css" rel="stylesheet" type="text/css">
+	<link rel="StartHere.css" href="https://use.typekit.net/tsx6jsj.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://use.typekit.net/tsx6jsj.css">
+
 </head>
 <body>
 	<div id="wrapper">
 	<header>
-	<h1> DANIEL'S PORTFOLIO WEBSITE</h1>	
+	<h1> <div class="box-1">
+			<a class="btn btn-one" href="StartHere.html">DANIEL ZOZZARO</a>
+	  </div></h1>	
 	</header>
-	<nav>
-		<ul>
-			<li><a href="StartHere.html">Start Here</a></li>
-			<li><a href="AboutMe.html">About Me</a></li>
-			<li><a href="MyWork.html">My Work</a></li>
-			<li><a href="Let'sConnect.html">Let's Connect</a></li>
-		  </ul>
-	</nav>
 	<div class="autoscroll">
 		<ul>
-			<li><a href="#section1"><i class="bi bi-1-circle"></i></a></li>
-			<li><a href="#section2"><i class="bi bi-2-circle"></i></a></li>
-			<li><a href="#section3"><i class="bi bi-3-circle"></i></a></li>
+			<li><a href="#section1"><i class="bi bi-flag-fill"></i></a></li>
+			<li><a href="#section2"><i class="bi bi-arrow-down"></i></a></li>
+			<li><a href="#section3"><i class="bi bi-arrow-down"></i></a></li>
+			<li><a href="#section4"><i class="bi bi-octagon-fill"></i></a></li>
 		  </ul>
 	</div>
+	<div class="socials">
+		<ul>
+			<li>
+			<a href="#">
+				<i class="fab fa-facebook-f icon"></i>    </a>
+			</li>
+			<li>
+			<a href="#"><i class="fab fa-twitter icon"></i></a>
+			</li>
+			<li>
+			<a href="#"><i class="fab fa-linkedin-in icon"></i></a></li>
+			<li>
+			<a href="#"><i class="fab fa-google-plus-g icon"></i></a></li>
+			</ul>
+	</div>
+
+
+	<nav>
+		<ul>
+			<li><a class="btn success" href="StartHere.html">Start Here</a></li>
+			<li><a class="btn info" href="AboutMe.html">About Me</a></li>
+			<li><a class="btn warning" href="MyWork.html">My Work</a></li>
+			<li><a class="btn danger" href="Let'sConnect.html">Let's Connect</a></li>
+		  </ul>
+	</nav>
 	<main>
 			<div id="section1">
-				<h2> ABOUT ME</h2>
+				<div class="text">
+					<p>Daniel The</p>
+					<p>
+					  <span class="word wisteria">Designer</span>
+					  <span class="word belize">Developer</span>
+					  <span class="word pomegranate">Coder</span>
+					  <span class="word green">Innovator</span>
+					  <span class="word midnight">Leader</span>
+					</p>
+				  </div>
 				<p id="Me">I am a dynamic and innovative graphic designer with a passion for exploring ways in which technology can help conceptualize, design, fabricate and promote products.</p>
 				<img id="portrait" src="portrait.jpeg" alt="Portrait" >
-				
+			</div>
+			<div id="section2">	
 			<div class="skills">
 				<div class="horizontal-scrolling-skills">
 					<div class="horizontal-scrolling-skills-logos">
@@ -80,23 +114,94 @@
 				</div>
 				</div>
 			</div>
-				<div id="section2">
+				<div id="section3">
 				<h2> RECENT WORK</h2>
 				<img class="mainpic" src="cups.jpg" alt="Portrait" >
 				<img class="mainpic" src="kraken.jpg" alt="kraken" >
 				<img class="mainpic" src="ring.jpg" alt="ring" >
 				<img class="mainpic" src="vinyl.jpg" alt="vinyl" >
-
+				<img class="mainpic" src="earrings.jpg" alt="vinyl" >
+				<p><a class="mainpic" href="MyWork.html">See More</a></p>
 			</div>
-			<div id="section3">
-				<h2> LETS CONNECT</h2>
-					<p><a href="Let'sConnect.html">Message Me</a></p>
-					<p><a href="AboutMe.html">About Me</a></p>
+			<div id="section4">
+				<p> Let's Connect.  Since it's</p>
+				<p id="demo"></p>
+				<p> and all. </p>
+
+					<p><a href="Let'sConnect.html" class="btn-flip" data-back="Let's Connect" data-front="Let's Connect"></a></p>
+					<p><a href="AboutMe.html" class="btn-flip" data-back="About Me" data-front="About Me"></a></p>
 			</div>
 	</main>
 	<footer>
 		<p>Social Media</p>
 	</footer>
 	</div>
+
+	<script>
+		const weekday = ["Silly Sunday","Marvelous Monday","Taco Tuesday","Waffle Wednesday","Thrilling Thursday","Freaky Friday","Sunny Saturday"];
+		
+		const d = new Date();
+		let day = weekday[d.getDay()];
+		document.getElementById("demo").innerHTML = day;
+		</script>
+	
+	
+<script>
+		var words = document.getElementsByClassName('word');
+var wordArray = [];
+var currentWord = 0;
+
+words[currentWord].style.opacity = 1;
+for (var i = 0; i < words.length; i++) {
+  splitLetters(words[i]);
+}
+
+function changeWord() {
+  var cw = wordArray[currentWord];
+  var nw = currentWord == words.length-1 ? wordArray[0] : wordArray[currentWord+1];
+  for (var i = 0; i < cw.length; i++) {
+    animateLetterOut(cw, i);
+  }
+  
+  for (var i = 0; i < nw.length; i++) {
+    nw[i].className = 'letter behind';
+    nw[0].parentElement.style.opacity = 1;
+    animateLetterIn(nw, i);
+  }
+  
+  currentWord = (currentWord == wordArray.length-1) ? 0 : currentWord+1;
+}
+
+function animateLetterOut(cw, i) {
+  setTimeout(function() {
+    cw[i].className = 'letter out';
+  }, i*80);
+}
+
+function animateLetterIn(nw, i) {
+  setTimeout(function() {
+    nw[i].className = 'letter in';
+  }, 340+(i*80));
+}
+
+function splitLetters(word) {
+  var content = word.innerHTML;
+  word.innerHTML = '';
+  var letters = [];
+  for (var i = 0; i < content.length; i++) {
+    var letter = document.createElement('span');
+    letter.className = 'letter';
+    letter.innerHTML = content.charAt(i);
+    word.appendChild(letter);
+    letters.push(letter);
+  }
+  
+  wordArray.push(letters);
+}
+
+changeWord();
+setInterval(changeWord, 4000);
+	</script>
+
 </body>
 </html>
